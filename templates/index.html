@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Bye, Connor!</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    </head>
+    <body>
+        <h1>Bye, Connor!</h1>
+        <h2 id='category'>Category: {{category}}</h2>
+        <h2 id='roll'>Roll: {{roll}}</h2>
+        <h2 id='Time'>0</h2>
+        <button onclick="makeTimer()">Start Timer</button>
+        <button onclick="pullData()">Next</button>
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+    </body>
+</html>
