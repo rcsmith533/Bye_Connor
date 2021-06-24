@@ -28,3 +28,6 @@ def take_turn():
     dict = {'category':categorie,'roll':roll}
     data = json.dumps(dict)
     return(data)
+
+if __name__ == '__main__':
+    app.run(threaded=True,port=80)
